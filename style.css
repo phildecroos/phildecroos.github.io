@@ -1,0 +1,174 @@
+html {
+    background: #000000;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #000000;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+::selection { 
+background-color: #0099ff; 
+color: #fff; 
+}
+
+.navbar {
+    width: 90%;
+    margin: 0 auto;
+    border: 0;
+    padding: 0;
+}
+
+header {
+    background: #0099ff;
+    position: fixed;
+    margin: 0;
+    margin: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+header a {
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+h1 {
+    float: left;
+    margin: 12px 0px 5px 0px;
+    font-size: 36px;
+    color: #000000;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+nav {
+    float: right;
+
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    height: 66px;
+    margin: 0;
+    display: inline-block;
+    justify-content: center;
+    position: relative;
+}
+
+nav a {
+    border: 5px clear green;
+    padding: 30px;
+}
+
+nav li:hover {
+    background: #DDDDDD;
+}
+
+nav li::before {
+    width: 100px;
+    margin: 0px 0px 0px 0px;
+    content: '';
+    display: block;
+    height: 25px;
+}
+
+nav a::after {
+    width: 100px;
+    margin: 0px 0px 0px 0px;
+    content: '';
+    display: block;
+    height: 5px;
+    background: #000000;
+    
+    position: absolute;
+    top: 61px;
+    width: 0%;
+    
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+h2 {
+    font-size: 52px;
+    text-align: center;
+    color: #EEEEEE;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.title h2 {
+    font-size: 64px;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+    width: 60%;
+    max-width: 750px;
+    margin: auto;
+    color: #EEEEEE;
+    margin-top: 0;
+    padding-bottom: 15px;
+}
+
+a {
+    color: #DDDDDD;
+}
+
+div {
+    text-align: center;
+    font-size: 18px;
+    text-align: center;
+    color: #DDDDDD;
+}
+
+li {
+    list-style: none;
+}
+
+.button a {
+    margin: 0px 25px 0px 25px;
+    text-decoration: none;
+    
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 22px;
+}
+
+.button a:hover {
+    background-color: #0099ff;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 22px;
+}
