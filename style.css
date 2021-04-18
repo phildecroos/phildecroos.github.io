@@ -19,6 +19,11 @@ color: #fff;
     margin: 0 auto;
     border: 0;
     padding: 0;
+    user-select: none;
+}
+
+br {
+    user-select: none;
 }
 
 header {
@@ -158,6 +163,7 @@ li {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 22px;
+    user-select: none;
 }
 
 .button a:hover {
