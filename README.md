@@ -1,3 +1,3 @@
-# phildecroos.github.io
+# Portfolio Website
 
-My portfolio website
+My portfolio website. phildecroos.com
