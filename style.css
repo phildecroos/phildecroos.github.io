@@ -1,0 +1,200 @@
+body {
+    background: #ffffff;
+    scroll-behavior: smooth;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #444444;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+.section-gap {
+    height: 50px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+
+html:not([data-scroll='0']) header {
+    background-image: linear-gradient(to bottom, rgba(200,200,200,1), rgba(255,255,255,0));
+}
+
+h1 {
+    font-size: 36px;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #444444;
+    transition: all 0.3s ease 0s;
+}
+
+a:hover {
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.option {
+    color: #444444;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 9px 12px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin: 10px 5px;
+}
+
+.option:hover {
+    background-color: #ffffff;
+    color: #444444;
+}
+
+.standout {
+    background-color: #1e90ff;
+    color: #ffffff;
+}
+
+.standout:hover {
+    background-color: #ffffff;
+    color: #444444;
+}
+
+.button {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 9px 12px;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.3s ease 0s;
+    margin: 0px 5px;
+    box-shadow: 2px 2px 25px #aaaaaa;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color: #444444;
+}
+
+.buttonholder {
+    margin: 5px 0px 19px 0px;
+}
+
+button {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.initgap {
+    height: 175px;
+}
+
+h2 {
+    font-size: 70px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 52px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+    width: 60%;
+    max-width: 750px;
+    margin: auto;
+    margin-top: 0;
+    padding-bottom: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+    z-index: 1;
+    justify-content: right;
+    
+}
+
+.show {
+    display:block;
+}
+
+.dropdown-gap {
+    height: 30px;
+}
+
+.dropdown a {
+    padding: 18px 10px 0px 10px;
+}
+
+.dropdown a {
+    color: #000000;
+    margin-left: 27px;
+    margin-right: 27px;
+    box-shadow: 2px 2px 25px #aaaaaa;
+}
+
+.dropdown a:hover {
+    background-color: #ffffff;
+}
+
+.email {
+    background-color: #1e90ff;
+}
+
+.resume {
+    background-color: #1e90ff;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.github {
+    background-color: #555555;
+}
+
+.youtube {
+    background-color: #232323;
+}
