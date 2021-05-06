@@ -1,8 +1,8 @@
 body {
-    background: #000000;
+    background: #ffffff;
     scroll-behavior: smooth;
     font-family: 'Merriweather Sans', sans-serif;
-    color: #eeeeee;
+    color: #444444;
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -10,8 +10,8 @@ body {
     font-size: 18px;
 }
 
-::selection {
-    background-color: #1e90ff;
+.section-gap {
+    height: 50px;
 }
 
 * {
@@ -21,23 +21,40 @@ body {
 }
 
 header {
-    background: #1e90ff;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 5% 10px 5%;
+    padding: 0px 5%;
     z-index: 1;
     position: fixed;
     width: 100%;
 }
 
+html:not([data-scroll='0']) header {
+    background-image: linear-gradient(to bottom, rgba(200,200,200,1), rgba(255,255,255,0));
+}
+
 h1 {
     font-size: 36px;
     font-family: 'Merriweather Sans', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #444444;
+    transition: all 0.3s ease 0s;
+}
+
+a:hover {
 }
 
 nav ul {
     list-style: none;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 nav ul li {
@@ -45,57 +62,53 @@ nav ul li {
 }
 
 .option {
-    color: black;
-    font-size: 20px;
+    color: #444444;
+    font-size: 18px;
     font-weight: 700;
     text-decoration: none;
-    padding: 11px 25px;
-    background-color: #1e90ff;
+    padding: 9px 12px;
     border: none;
     border-radius: 12px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    margin: 0px 5px;
+    margin: 10px 5px;
 }
 
 .option:hover {
-    background-color: #000000;
-    color: #eeeeee;
+    background-color: #ffffff;
+    color: #444444;
 }
 
 .standout {
-    background-color: #eeeeee;
-    color: #000000;
+    background-color: #1e90ff;
+    color: #ffffff;
 }
 
 .standout:hover {
-    background-color: #000000;
-    color: #eeeeee;
+    background-color: #ffffff;
+    color: #444444;
 }
 
 .button {
-    color: black;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 700;
-    padding: 9px 21px;
-    background-color: #eeeeee;
+    padding: 9px 12px;
+    background-color: #1e90ff;
     border: none;
     border-radius: 12px;
     transition: all 0.3s ease 0s;
     margin: 0px 5px;
+    box-shadow: 2px 2px 25px #aaaaaa;
 }
 
 .button:hover {
-    background-color: #1e90ff;
+    background-color: #ffffff;
+    color: #444444;
 }
 
 .buttonholder {
     margin: 5px 0px 19px 0px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
 }
 
 button {
@@ -107,19 +120,17 @@ ul {
 }
 
 .initgap {
-    height: 85px;
+    height: 175px;
 }
 
 h2 {
-    font-size: 64px;
+    font-size: 70px;
     text-align: center;
-    color: #eeeeee;
 }
 
 h3 {
     font-size: 52px;
     text-align: center;
-    color: #eeeeee;
 }
 
 p {
@@ -132,10 +143,14 @@ p {
     padding-bottom: 15px;
 }
 
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
-    margin: 50px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     z-index: 1;
     justify-content: right;
     
@@ -153,12 +168,22 @@ p {
     padding: 18px 10px 0px 10px;
 }
 
-.dropdown a:hover {
-    background-color: #eeeeee;
+.dropdown a {
     color: #000000;
+    margin-left: 27px;
+    margin-right: 27px;
+    box-shadow: 2px 2px 25px #aaaaaa;
+}
+
+.dropdown a:hover {
+    background-color: #ffffff;
 }
 
 .email {
+    background-color: #1e90ff;
+}
+
+.resume {
     background-color: #1e90ff;
 }
 
@@ -167,11 +192,9 @@ p {
 }
 
 .github {
-    background-color: #333333;
-    color: #eeeeee;
+    background-color: #555555;
 }
 
 .youtube {
-    margin: 0px 0px 10px 0px;
     background-color: #232323;
 }
