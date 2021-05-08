@@ -21,7 +21,7 @@ body {
 }
 
 header {
-    
+    user-select: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,9 +46,6 @@ a {
     text-decoration: none;
     color: #444444;
     transition: all 0.3s ease 0s;
-}
-
-a:hover {
 }
 
 nav ul {
