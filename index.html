@@ -1,194 +1,232 @@
 <!DOCTYPE html> 
+<!--
+    if you're reading this, you know what to do
+               v  v  v  v  v  v  v
+            > pdecroos@uwaterloo.ca <
+               ^  ^  ^  ^  ^  ^  ^
+-->
     <head>
-        
         <title>
             Phil DeCroos
         </title>
         
         <link href="style.css" rel="stylesheet"/>
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         
         <meta charset="UTF-8">
         
         <link rel="icon" href="icon.png">
-
     </head>
   
     <body>
         <header>
             <h1>
-                <a href="index.html">Phil DeCroos</a>
+                <a id="home" href="index.html">Phil DeCroos</a>
             </h1>
 
             <nav>
                 <ul>
-                    <li><a class="option" href="index.html">About Me</a></li>
-                    <li><a class="option" href="mechanical.html">Mechanical</a></li>
-                    <li><a class="option" href="coding.html">Coding</a></li>
-
-                    <li>
-                        <div class="dropdown">
-                            <button onclick="drop()" class="dropbtn option standout">Connect</button>
-
-                            <div id="menu" class="dropdown-content">
-                                <div class="dropdown-gap"></div>
-                                <a class="button email" target="_blank" href="mailto:pdecroos@uwaterloo.ca"><image src="email.png" height="30px"></image></a>
-                                <div class="dropdown-gap"></div>
-                                <a class="button resume" target="_blank" href="resume.pdf"><image src="resume.png" height="30px"></image></a>
-                                <div class="dropdown-gap"></div>
-                                <a class="button linkedin" target="_blank" href="https://www.linkedin.com/in/philip-decroos/"><image src="linkedin.png" height="30px"></image></a>
-                                <div class="dropdown-gap"></div>
-                                <a class="button github" target="_blank" href="https://github.com/phildecroos"><image src="github.png" height="30px"></image></a>
-                                <div class="dropdown-gap"></div>
-                                <a class="button youtube" target="_blank" href="https://www.youtube.com/channel/UCZ_ytpvFQBsmq4oqE_OsNLg"><image src="youtube.png" height="32px"></image></a>
-                            </div>
-                        </div>
-                    </li>
-
-                    <script>
-                        // Code from https://www.w3schools.com/howto/howto_js_dropdown.asp
-
-                        function drop() {
-                            document.getElementById("menu").classList.toggle("show");
-                        }
-
-                        window.onclick = function(event) {
-                            if (!event.target.matches('.dropbtn')) {
-                                var dropdowns = document.getElementsByClassName("dropdown-content");
-                                var i;
-                                for (i = 0; i < dropdowns.length; i++) {
-                                    var openDropdown = dropdowns[i];
-                                    if (openDropdown.classList.contains('show')) {
-                                        openDropdown.classList.remove('show');
-                                    }
-                                }
-                            }
-                        }
-                    </script>
+                    <li><a class="option" href="index.html#about">About</a></li>
+                    <li><a class="option" href="projects.html">Projects</a></li>
+                    <li><a class="option" href="connect.html">Connect</a></li>
                 </ul>
             </nav>
         </header>
 
-        <div class="initgap"></div>
+        <div class="initsection">
+            <div id="before1"></div>
 
-        <div> 
-            <h2>
-                Hi, I'm Phil!
-            </h2>
+            <div> 
+                <div id="hello">
+                    Hey, I'm Phil
+                </div>
+            </div>
+    
+            <div>
+                <br>
+                <br>
+    
+                <p>
+                    A Mechatronics Engineering student at UWaterloo.
+                </p>
+    
+                <br>
+                <br>
+    
+                <div class="buttonholder">
+                    <a class="button" href="#about">About</a>
+                    <a class="button" href="#skills">Skills</a>
+                    <a class="button" href="#projects">Projects</a>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="downguide" id="about"></div>
         </div>
 
-        <div> 
-            <p>
-                A Mechatronics Engineering student at the University of Waterloo and I'm thrilled that you're here!
-            </p>
-
-            <p>
-                Some of my interests are:
-            </p>
-
-            <ul>
-                <li>🤖 Robotics</li>
-                <li>🚗 Transportation</li>
-                <li>💻 Coding (especially for 🎮 video games)</li>
-                <li>🌐 Web development</li>
-                <li>🚀 Aerospace</li>
-            </ul>
+        <div class="section">
+            <div class="subtitle">
+                About Me
+            </div>
 
             <br>
 
             <p>
-                Scroll down to check out some of my favourite projects!
+                My name is Phil DeCroos and I a Mechatronics Engineering student at UWaterloo from Cambridge, Ontario.
             </p>
+
+            <p>
+                I'm super passionate about:
+            </p>
+
+            <ul>
+                <li>✏️ Design</li>
+                <li>👨‍💼 Entrepreneurship</li>
+                <li>🔧 Building Things</li>
+            </ul>
+
+            <p>
+                I especially enjoy working on projects that combine different mechanical, electrical, and software components into one cohesive machine.
+            </p>
+
+            <div class="downguide" id="skills"></div>
         </div>
 
-        <div id="downguide"> 
-            <a href="#downguide">
-                <img src="down_arrow.gif" width="100" height="100">
+        <div class="section">
+            <div class="subtitle">
+                Skills
+            </div>
+
+            <br>
+
+            <p>
+                My areas of skill include Design/CAD, coding, and building + testing.
+            </p>
+
+            <p>
+                In addition to my hands-on experience with skills such as welding, woodworking, and soldering, I also have experience with these tools and languages 👇
+            </p>
+
+
+            <image src="solidworks.png" height="35px" style="margin-bottom: 4px;"></image>
+            <image src="autocad.png" height="35px"></image>
+            <image src="office.png" height="30px" style="margin-bottom: 4px;"></image>
+
+            <br>
+
+            <image src="python.svg" height="45px"></image>
+            <image src="c.svg" height="45px"></image>
+            <image src="c++.svg" height="45px"></image>
+            <image src="html.svg" height="45px"></image>
+            <image src="css.svg" height="45px"></image>
+            <image src="javascript.svg" height="45px"></image>
+
+            <div class="downguide" id="projects"></div>
+        </div>
+
+        <div class="section">
+            <div class="subtitle">
+                Projects
+            </div>
+
+            <br>
+
+            <p>
+                I have done a wide variety of independent and collaborative projects spanning several different fields. Check out the Projects page to see them!
+            </p>
+
+            <div>
+                <image class="imagerow" src="car_image_1.jpg"></image>
+                <image class="imagerow" src="lunar_lander_img.png"></image>
+                <image class="imagerow" src="phone_stand_standing.jpg"></image>
+            </div>
+
+            <br>
+
+            <div class="buttonholder">
+                <a class="button" href="projects.html">See More</a>
+            </div>
+
+            <div class="downguide" id="experience"></div>
+        </div>
+
+        <div class="section">
+            <div class="subtitle">
+                Experience
+            </div>
+
+            <br>
+
+            <p>
+                In addition to participating in hackathons and design teams, I also have experience working in various fields. Here is my most recent position 👇
+            </p>
+
+            <br>
+
+            <image src="ecpr.png" height="35px"></image>
+
+            <p class="bold">
+                Design & Manufacturing Support Technician
+            </p>
+
+            <p>
+                I was responsible for inspecting custom mechanical and electrical parts for use in medical equipment, as well as coordinating the different teams to improve production efficiency.
+            </p>
+
+            <br>
+
+            <p>
+                For a more complete list of my experience, check out my LinkedIn!
+            </p>
+
+            <div class="buttonholder">
+                <a class="button" target="_blank" href="https://www.linkedin.com/in/philip-decroos/">LinkedIn</a>
+            </div>
+
+            <div class="downguide" id="education"></div>
+        </div>
+
+        <div class="section">
+            <div class="subtitle">
+                Education
+            </div>
+
+            <br>
+
+            <p>
+                I am currently studying Mechatronics Engineering at UWaterloo and am going into the 2A term.
+            </p>
+
+            <image src="uwaterloo.png" height="50px"></image>
+
+            <p>
+                In addition to studying in school, I have also done several courses on sites like LinkedIn Learning and SoloLearn to help me improve my skills in areas such as coding and CAD.
+            </p>
+
+            <image src="linkedin_learning.jpg" height="50px"></image>
+            <image src="sololearn.png" height="35px" style="margin-bottom: 7px;"></image>
+        </div>
+
+        <div class="footer">
+            <div class="footerbefore"></div>
+
+            <a class="footerlink" href="https://www.linkedin.com/in/philip-decroos/" target="_blank">
+                <image class="linkedin" src="linkedin.png"></image>
+            </a>
+
+            <a class="footerlink" href="https://github.com/phildecroos" target="_blank">
+                <image class="github" src="github.png"></image>
+            </a>
+
+            <a class="footerlink" href="https://www.youtube.com/channel/UCZ_ytpvFQBsmq4oqE_OsNLg" target="_blank">
+                <image class="youtube" src="youtube.png"></image>
             </a>
         </div>
-
-        <div class="section-gap"></div>
-
-        <div>
-            <h3>
-                UWaterloo EV Challenge
-            </h3>
-            
-            <p>
-                I was on a team that built and raced an electric car for 3 years. I worked on projects such as building a mount for a second battery and making panels for the body of the car.
-            </p>
-
-            <img src="car_image_1.JPG" width="300px">
-            <img src="car_image_2.JPG" width="300px">
-        </div>
-
-        <div class="section-gap"></div>
-
-        <div>
-            <h3>
-                Arduino Timer
-            </h3>
-
-            <div class="buttonholder">
-                <a class="button" target="_blank" href="https://github.com/phildecroos/arduino_timer/blob/main/lcd_clock.ino">The Code</a>
-            </div>
-
-            <iframe width="900" height="506" src="https://www.youtube.com/embed/Cxwx_L6dqV0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-        <div class="section-gap"></div>
-
-        <div>
-            <h3>
-                Lunar Lander
-            </h3>
-
-            <div class="buttonholder">
-                <a class="button" target="_blank" href="https://github.com/phildecroos/Lunar-Lander/blob/master/Lunar%20Lander%20Game.py">The Code</a>
-            </div>
-
-            <iframe width="900" height="506" src="https://www.youtube.com/embed/ixTvAfbv0Nk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-        <div class="section-gap"></div>
-
-        <div>
-            <h3>
-                Whiteboard
-            </h3>
-
-            <div class="buttonholder">
-                <a class="button" target="_blank" href="https://github.com/phildecroos/whiteboard">The Code</a>
-                <a class="button" target="_blank" href="https://phildecroos.com/whiteboard/">Try it Out!</a>
-            </div>
-            
-            <iframe width="900" height="506" src="https://www.youtube.com/embed/EkG7d2XrCdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-        <div class="section-gap"></div>
-
-        <div>
-            <h3>
-                FIRST LEGO League
-            </h3>
-            
-            <p>
-                For 5 years I was on a team that competed in the FLL robotics competiton. Our final robot (below) won the provincial robot design award for its modular design.
-            </p>
-
-            <img src="robot.png" width="300px">
-        </div>
-
-        <div class="section-gap"></div>
-        
-        <div>
-            <p>
-                Check out more of my projects or get in touch!
-            </p>
-        </div>
-
-        <div class="section-gap"></div>
     </body>
 </html>
