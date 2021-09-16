@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<!--
+    if you're reading this, you know what to do
+               v  v  v  v  v  v  v
+            > pdecroos@uwaterloo.ca <
+               ^  ^  ^  ^  ^  ^  ^  
+-->
+    <head>
+        
+        <title>
+            Phil DeCroos
+        </title>
+        
+        <link href="style.css" rel="stylesheet"/>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        
+        <meta charset="UTF-8">
+        
+        <link rel="icon" href="icon.png">
+
+    </head>
+  
+    <body>
+        <header>
+            <h1>
+                <a href="index.html">Phil DeCroos</a>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a class="option" href="index.html">About Me</a></li>
+                    <li><a class="option" href="mechanical.html">Mechanical</a></li>
+                    <li><a class="option" href="coding.html">Coding</a></li>
+
+                    <li>
+                        <div class="dropdown">
+                            <button onclick="drop()" class="dropbtn option standout">Connect</button>
+
+                            <div id="menu" class="dropdown-content">
+                                <div class="dropdown-gap"></div>
+                                <a class="button email" target="_blank" href="mailto:pdecroos@uwaterloo.ca"><image src="email.png" height="30px"></image></a>
+                                <div class="dropdown-gap"></div>
+                                <a class="button resume" target="_blank" href="resume.pdf"><image src="resume.png" height="30px"></image></a>
+                                <div class="dropdown-gap"></div>
+                                <a class="button linkedin" target="_blank" href="https://www.linkedin.com/in/philip-decroos/"><image src="linkedin.png" height="30px"></image></a>
+                                <div class="dropdown-gap"></div>
+                                <a class="button github" target="_blank" href="https://github.com/phildecroos"><image src="github.png" height="30px"></image></a>
+                                <div class="dropdown-gap"></div>
+                                <a class="button youtube" target="_blank" href="https://www.youtube.com/channel/UCZ_ytpvFQBsmq4oqE_OsNLg"><image src="youtube.png" height="32px"></image></a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <script>
+                        // Code from https://www.w3schools.com/howto/howto_js_dropdown.asp
+
+                        function drop() {
+                            document.getElementById("menu").classList.toggle("show");
+                        }
+
+                        window.onclick = function(event) {
+                            if (!event.target.matches('.dropbtn')) {
+                                var dropdowns = document.getElementsByClassName("dropdown-content");
+                                var i;
+                                for (i = 0; i < dropdowns.length; i++) {
+                                    var openDropdown = dropdowns[i];
+                                    if (openDropdown.classList.contains('show')) {
+                                        openDropdown.classList.remove('show');
+                                    }
+                                }
+                            }
+                        }
+                    </script>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="initgap_2"></div>
+
+        <div> 
+            <h2>
+                Mechanical
+            </h2>
+
+            <p>
+                These are my mechanical/electrical projects.
+            </p>
+        </div>
+
+        <div>
+            <h3>
+                My Skills
+            </h3>
+        </div>
+        
+        <div class="section-gap"></div>
+
+        <div class="project-grid">
+            <div class="project">
+                <a href="uw_ev_challenge.html">
+                    <h4>
+                        UWaterloo EV Challenge
+                    </h4>
+
+                    <br>
+                
+                    <div>
+                        <img src="car_image_1.JPG" height="250px">
+                    </div>
+                </a>
+            </div>
+
+            <div class="project">
+                <a href="uw_ev_challenge.html">
+                    <h4>
+                        Arduino Timer
+                    </h4>
+
+                    <br>
+                
+                    <div>
+                        <img src="timer.png" height="250px">
+                    </div>
+                </a>
+            </div>
+
+            <div class="project">
+                <a href="uw_ev_challenge.html">
+                    <h4>
+                        FIRST LEGO League
+                    </h4>
+
+                    <br>
+                
+                    <div>
+                        <img src="robot.png" height="250px">
+                    </div>
+                </a>
+            </div>
+
+            <div class="project">
+                <a href="uw_ev_challenge.html">
+                    <h4>
+                        Phone Stand
+                    </h4>
+
+                    <br>
+                
+                    <div>
+                        <img src="phone_stand_standing.JPG" height="250px">
+                    </div>
+                </a>
+            </div>
+
+            <div class="project">
+                <a href="uw_ev_challenge.html">
+                    <h4>
+                        Snowflake
+                    </h4>
+
+                    <br>
+                
+                    <div>
+                        <img src="snowflake.png" height="250px">
+                    </div>
+                </a>
+            </div>
+
+            <div class="project">
+                <a href="uw_ev_challenge.html">
+                    <h4>
+                        Death Star & Keychain
+                    </h4>
+
+                    <br>
+                
+                    <div>
+                        <img src="3d_print.png" height="250px">
+                    </div>
+                </a>
+            </div>
+
+            <div class="project">
+                <a href="uw_ev_challenge.html">
+                    <h4>
+                        Rocket
+                    </h4>
+
+                    <br>
+                
+                    <div>
+                        <img src="rocket_image.JPG" height="250px">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+        
+
+        <div>
+            <h3>
+                UWaterloo EV Challenge
+            </h3>
+            
+            <p>
+                I was on a team that built and raced an electric car for 3 years. I worked on projects such as adding a second battery and making panels for the body of the car.
+            </p>
+
+            <img src="car_image_1.JPG" width="300px">
+            <img src="car_image_2.JPG" width="300px">
+        </div>
+
+        <div class="section-gap"></div>
+
+        <div>
+            <h3>
+                Arduino Timer
+            </h3>
+
+            <div class="buttonholder">
+                <a class="button" target="_blank" href="https://github.com/phildecroos/arduino_timer/blob/main/lcd_clock.ino">The Code</a>
+            </div>
+            
+            <iframe width="900" height="506" src="https://www.youtube.com/embed/Cxwx_L6dqV0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="section-gap"></div>
+
+        <div>
+            <h3>
+                FIRST LEGO League
+            </h3>
+            
+            <p>
+                For 5 years I was on a team that competed in the FLL robotics competiton. Our final robot (below) won the provincial robot design award for its modular design.
+            </p>
+
+            <img src="robot.png" width="300px">
+        </div>
+
+        <div class="section-gap"></div>
+
+        <div>
+            <h3>
+                Phone Stand
+            </h3>
+            
+            <p>
+                This is a folding phone stand I designed using SolidWorks and GrabCAD, and then had 3D printed. It does kind of look like TARS from Interstellar.
+            </p>
+
+            <img src="phone_stand_standing.JPG" width="300px">
+            <img src="phone_stand_folded.JPG" width="300px">
+        </div>
+
+        <div class="section-gap"></div>
+
+        <div>
+            <h3>
+                Snowflake
+            </h3>
+            
+            <p>
+                I designed this snowflake in AutoCAD and then had it laser-cut.
+            </p>
+
+            <img src="snowflake.png" width="300px">
+        </div>
+
+        <div class="section-gap"></div>
+
+        <div>
+            <h3>
+                Death Star & Keychain
+            </h3>
+            
+            <p>
+                I designed these in TinkerCAD and then had them 3D printed.
+            </p>
+
+            <img src="3d_print.png" width="300px">
+        </div>
+        
+        <div class="section-gap"></div>
+
+        <div>
+            <h3>
+                Rocket
+            </h3>
+            
+            <p>
+                A partner and I designed and built this rocket to fly to a max height of 23m. We did our calculations using Excel, and it flew to 23.17m.
+            </p>
+
+            <video width="230px" controls>
+                <source src="rocket_video.mp4" type="video/mp4">
+                Something went wrong with the video tag :(
+            </video>
+
+            <img src="rocket_image.JPG" width="300px">
+        </div>
+        
+        <div class="section-gap"></div>
+
+        <div>
+            <p>
+                Thanks so much for checking out my website! Let's get in touch!
+            </p>
+        </div>
+
+        <div class="section-gap"></div>
+
+    </body>
+</html>
