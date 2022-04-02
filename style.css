@@ -239,8 +239,12 @@ nav ul li {
 
 
 
+.connect_initsection {
+    height: 90vh;
+}
+
 .connectgap {
-    height: 30vh;
+    height: 20vh;
 }
 
 .down {
@@ -253,7 +257,6 @@ nav ul li {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 99;
 }
 
 .down:hover .hoverimg {
