@@ -71,6 +71,16 @@ p {
     margin-bottom: 100px;
 }
 
+::-moz-selection {
+    color: #ffffff;
+    background: #1e90ff;
+}
+
+::selection {
+    color: #ffffff;
+    background: #1e90ff;
+}
+
 
 
 /* Navbar */
