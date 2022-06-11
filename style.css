@@ -1,26 +1,40 @@
-/* General Tags */
+/*
+formatting {
+    margin, padding, size, positioning, background
+
+    font characteristics
+
+    other
+}
+*/
+
+/* General */
 
 
 
 html {
-    scroll-behavior: smooth;
     font-family: 'Lexend Deca', sans-serif;
+    
+    scroll-behavior: smooth;
 }
 
 body {
-    background: #ffffff;
-    color: #000000;
     margin: 0;
     padding: 0;
+    background: #ffffff;
+
+    color: #000000;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 18px;
     text-decoration: none;
     text-align: center;
-    font-size: 18px;
 }
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+    box-sizing: border-box;
 }
 
 a {
@@ -28,21 +42,41 @@ a {
 }
 
 ul {
-    list-style: none;
     margin-bottom: 20px;
+    list-style: none;
 }
 
 br {
     user-select: none;
 }
 
+/* Main Title */
+h1 {
+    font-size: 70px;
+    font-weight: 600;
+}
+
+/* Smaller Title */
+h2 {
+    font-size: 52px;
+    font-weight: 600;
+}
+
+/* Subitle */
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
 p {
-    font-size: 18px;
-    text-align: center;
-    width: 40vw;
     margin: auto;
     margin-top: 0;
     padding-bottom: 15px;
+    width: 40vw;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    text-align: center;
 }
 
 .bold {
@@ -57,28 +91,18 @@ p {
     height: 30vh;
 }
 
-#hello {
-    font-size: 70px;
-    font-weight: 600;
-}
-
-.subtitle {
-    font-size: 52px;
-    font-weight: 600;
-}
-
 .section {
     margin-bottom: 100px;
 }
 
 ::-moz-selection {
-    color: #ffffff;
     background: #1e90ff;
+    color: #ffffff;
 }
 
 ::selection {
-    color: #ffffff;
     background: #1e90ff;
+    color: #ffffff;
 }
 
 
@@ -88,31 +112,34 @@ p {
 
 
 #home {
-    font-size: 36px;
-    font-weight: 600;
     margin-top: 0px;
     margin-bottom: 10px;
+    
+    font-family: 'Lexend Deca', sans-serif;
     color: #000000;
+    font-size: 36px;
+    font-weight: 600;
 }
 
 header {
-    user-select: none;
+    padding: 0px 5%;
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0px 5%;
     z-index: 1;
     position: fixed;
     width: 100%;
-    background: #ffffff;
-    box-shadow: 0px 0px 5px #aaaaaa;
     height: 80px;
+    box-shadow: 0px 0px 5px #aaaaaa;
+    user-select: none;
+    background: #ffffff;
 }
 
 nav ul {
-    list-style: none;
     margin-top: 12px;
     margin-bottom: 10px;
+    
+    list-style: none;
 }
 
 nav ul li {
@@ -120,14 +147,16 @@ nav ul li {
 }
 
 .option {
+    margin: 0px 15px;
+    padding: 2px 0px;
+    border: none;
+
     color: #000000;
     font-size: 19px;
     font-weight: 600;
     text-decoration: none;
-    padding: 2px 0px;
-    border: none;
+    
     cursor: pointer;
-    margin: 0px 15px;
 }
 
 .option:hover {
@@ -144,7 +173,8 @@ nav ul li {
 
 .footer {
     height: 80px;
-    background-color: #1e90ff;
+    background: #1e90ff;
+
     user-select: none;
 }
 
@@ -157,8 +187,8 @@ nav ul li {
 }
 
 .linkedin {
-    height: 25px;
     margin-bottom: 2px;
+    height: 25px;
 }
 
 .github {
@@ -166,8 +196,8 @@ nav ul li {
 }
 
 .youtube {
-    width: 30px;
     margin-bottom: 4px;
+    width: 30px;
 }
 
 
@@ -177,19 +207,21 @@ nav ul li {
 
 
 .button {
+    margin: 0px 5px;
+    padding: 9px 13px;
+    border: none;
+    border-radius: 10px;
+    background: #1e90ff;
+    
     color: #ffffff;
     text-decoration: none;
     font-weight: 600;
-    padding: 9px 13px;
-    background-color: #1e90ff;
-    border: none;
-    border-radius: 10px;
-    margin: 0px 5px;
+    
     user-select: none;
 }
 
 .button:hover {
-    background-color: #000000;
+    background: #000000;
 }
 
 .buttonholder {
