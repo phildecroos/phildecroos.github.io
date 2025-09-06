@@ -120,6 +120,11 @@ ul {
 
 /* Middle Blocks */
 
+.pfp {
+    height: 10vw;
+    border-radius: 50%;
+}
+
 .middle_block {
     height: 77%;
 }
@@ -143,7 +148,7 @@ ul {
 
 #home_content {
     display: block;
-    padding-top: 7vw;
+    padding-top: 3vw;
 }
 
 #tic_tac_toe_content {
