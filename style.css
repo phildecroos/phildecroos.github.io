@@ -45,6 +45,14 @@ a {
     text-decoration: none;
 }
 
+.in_text_link {
+    text-decoration: underline;
+    color: #1e90ff;
+    font-weight: 600;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 18px;
+}
+
 ul {
     list-style: none;
 }
@@ -151,6 +159,14 @@ ul {
     padding-top: 3vw;
 }
 
+#decruise_content {
+    display: none;
+}
+
+#mte_380_content {
+    display: none;
+}
+
 #tic_tac_toe_content {
     display: none;
 }
@@ -169,6 +185,60 @@ ul {
 
 #whiteboard_content {
     display: none;
+}
+
+#decruise_slide1 {
+    display: grid;
+}
+#decruise_slide2 {
+    display: none;
+}
+#decruise_slide3 {
+    display: none;
+}
+
+#mte380_slide1 {
+    display: grid;
+}
+#mte380_slide2 {
+    display: none;
+}
+
+.slideshow {
+    position: relative;
+    z-index: 2;
+    height: 20vw;
+    width: 35.56vw;
+    display: flex;
+    align-items: center;
+}
+
+.slide {
+    height: 100%;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide_contents {
+    max-height: 20vw;
+    max-width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.slide_arrow_l {
+    z-index: 2;
+    max-width: 5%;
+    cursor: pointer;
+}
+
+.slide_arrow_r {
+    z-index: 2;
+    max-width: 5%;
+    cursor: pointer;
 }
 
 .video_alt {

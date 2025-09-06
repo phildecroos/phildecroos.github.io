@@ -56,12 +56,85 @@
                 </h1>
 
                 <div class="content_desc">
-                    Data Center Test Engineer at NVIDIA 💚
+                    Engineer at NVIDIA 💚
                     <br>
-                    Mechatronics Engineering graduate from UWaterloo 🍁
+                    Graduate from UWaterloo 🍁
                     <br>
                     <br>
-                    Here are some of my personal projects!
+                    Here are some of my projects!
+                    <br>
+                    You can also find more on my YouTube <a class="in_text_link" href="https://www.youtube.com/@phildecroos" target="_blank">channel</a>
+                </div>
+            </div>
+
+            <div id="decruise_content" class="content_block left">
+                <h1>
+                    DeCruise
+                </h1>
+
+                <div class="slideshow">
+                    <img src="assets/left.png" class="slide_arrow_l" onclick="dec_slide('decruise')"></img>
+                    <div id="decruise_slide1" class="slide">
+                        <img src="assets/decruise.png" class="slide_contents"></img>
+                    </div>
+                    <div id="decruise_slide2" class="slide">
+                        <img src="assets/decruise_open.jpg" class="slide_contents"></img>
+                    </div>
+                    <div id="decruise_slide3" class="slide">
+                        <img src="assets/decruise_ride.jpg" class="slide_contents"></img>
+                    </div>
+                    <img src="assets/right.png" class="slide_arrow_r" onclick="inc_slide('decruise')"></img>
+                </div>
+
+                <div class="tools">
+                    <img class="tool" src="assets/cpp.png"></img>
+                    <img class="tool" src="assets/espressif.svg"></img>
+                    <img class="tool" src="assets/python.png"></img>
+                    <img class="tool" src="assets/tf.png"></img>
+                </div>
+
+                <div class="content_desc">
+                    The world's most advanced longboard. My 4th year design project.
+                    <br> I wrote the software and worked on system integration.
+                </div>
+
+                <div class="button_holder">
+                    <a class="button dark_button" href="https://decruise.ca" target="_blank">Website</a>
+                    <a class="button dark_button" href="https://github.com/decruise" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div id="mte_380_content" class="content_block left">
+                <h1>
+                    MTE 380
+                </h1>
+
+                <div class="slideshow">
+                    <img src="assets/left.png" class="slide_arrow_l" onclick="dec_slide('mte380')"></img>
+                    <div id="mte380_slide1" class="slide">
+                        <img src="assets/mte380.png" class="slide_contents"></img>
+                    </div>
+                    <div id="mte380_slide2" class="slide">
+                        <video class="slide_contents" controls>
+                            <source src="assets/mte380.mp4" type="video/mp4">
+                            Error loading the HTML video tag :(
+                        </video>
+                    </div>
+                    <img src="assets/right.png" class="slide_arrow_r" onclick="inc_slide('mte380')"></img>
+                </div>
+
+                <div class="tools">
+                    <img class="tool" src="assets/cpp.png"></img>
+                    <img class="tool" src="assets/st.png"></img>
+                </div>
+
+                <div class="content_desc">
+                    A "Search & Rescue" robot built to find and rescue a LEGO man during our MTE 380 course.
+                    <br> I wrote the firmware and worked on system integration.
+                </div>
+
+                <div class="button_holder">
+                    <a class="button dark_button" href="https://github.com/phildecroos/MTE380" target="_blank">GitHub</a>
                 </div>
             </div>
 
@@ -142,9 +215,9 @@
 
                 <div class="tools">
                     <img class="tool" src="assets/js.png"></img>
-                    <img class="tool" src="assets/python.png"></img>
                     <img class="tool" src="assets/html.png"></img>
                     <img class="tool" src="assets/css.png"></img>
+                    <img class="tool" src="assets/python.png"></img>
                 </div>
 
                 <div class="content_desc">
@@ -229,10 +302,12 @@
                 </div>
 
                 <ul class="projects_list">
+                    <li onclick="change_content('decruise')">🛹 DeCruise</li>
+                    <li onclick="change_content('mte_380')">🤖 MTE 380</li>
                     <li onclick="change_content('tic_tac_toe')">Tic Tac Toe AI</li>
                     <li onclick="change_content('lunar_lander')">Lunar Lander</li>
                     <li onclick="change_content('arcade')">Online Arcade</li>
-                    <li onclick="change_content('timer')">Arduino Timer</li>
+                    <!-- <li onclick="change_content('timer')">Arduino Timer</li> -->
                     <li onclick="change_content('whiteboard')">Whiteboard</li>
                 </ul>
             </div>
@@ -256,6 +331,8 @@
                     document.getElementById("github").src = "assets/github_white.png";
                     document.getElementById("youtube").src = "assets/youtube_white.png";
                     document.getElementById("mode_img").src = "assets/sun.png";
+                    document.querySelectorAll('.slide_arrow_l').forEach(img => img.src = 'assets/left.png');
+                    document.querySelectorAll('.slide_arrow_r').forEach(img => img.src = 'assets/right.png');
 
                     var buttons = document.getElementsByClassName("button");
                     for (var i = 0, length = buttons.length; i < length; i++) {
@@ -274,6 +351,8 @@
                     document.getElementById("github").src = "assets/github_black.png";
                     document.getElementById("youtube").src = "assets/youtube_black.png";
                     document.getElementById("mode_img").src = "assets/moon.png";
+                    document.querySelectorAll('.slide_arrow_l').forEach(img => img.src = 'assets/left_black.png');
+                    document.querySelectorAll('.slide_arrow_r').forEach(img => img.src = 'assets/right_black.png');
 
                     var buttons = document.getElementsByClassName("button");
                     for (var i = 0, length = buttons.length; i < length; i++) {
@@ -306,6 +385,38 @@
                     document.getElementById(id + "_content").style.display = "block";
                     curr = id;
                 }
+            }
+
+            curr_slides = {
+                "decruise": 1,
+                "mte380": 1
+            }
+
+            max_slides = {
+                "decruise": 3,
+                "mte380": 2
+            }
+
+            function dec_slide(id) {
+                document.getElementById(id + "_slide" + String(curr_slides[id])).style.display = "none";
+                if (curr_slides[id] == 1) {
+                    curr_slides[id] = max_slides[id];
+                }
+                else {
+                    curr_slides[id] -= 1;
+                }
+                document.getElementById(id + "_slide" + String(curr_slides[id])).style.display = "grid";
+            }
+
+            function inc_slide(id) {
+                document.getElementById(id + "_slide" + String(curr_slides[id])).style.display = "none";
+                if (curr_slides[id] == max_slides[id]) {
+                    curr_slides[id] = 1;
+                }
+                else {
+                    curr_slides[id] += 1;
+                }
+                document.getElementById(id + "_slide" + String(curr_slides[id])).style.display = "grid";
             }
         </script>
     </div>
