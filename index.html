@@ -62,8 +62,6 @@
                     <br>
                     <br>
                     Here are some of my projects!
-                    <br>
-                    You can also find more on my YouTube <a class="in_text_link" href="https://www.youtube.com/@phildecroos" target="_blank">channel</a>
                 </div>
             </div>
 
@@ -89,6 +87,7 @@
                 <div class="tools">
                     <img class="tool" src="assets/cpp.png"></img>
                     <img class="tool" src="assets/espressif.svg"></img>
+                    <img class="tool" src="assets/nvidia.svg"></img>
                     <img class="tool" src="assets/python.png"></img>
                     <img class="tool" src="assets/tf.png"></img>
                 </div>
@@ -112,13 +111,13 @@
                 <div class="slideshow">
                     <img src="assets/left.png" class="slide_arrow_l" onclick="dec_slide('mte380')"></img>
                     <div id="mte380_slide1" class="slide">
-                        <img src="assets/mte380.png" class="slide_contents"></img>
-                    </div>
-                    <div id="mte380_slide2" class="slide">
                         <video class="slide_contents" controls>
                             <source src="assets/mte380.mp4" type="video/mp4">
                             Error loading the HTML video tag :(
                         </video>
+                    </div>
+                    <div id="mte380_slide2" class="slide">
+                        <img src="assets/mte380.png" class="slide_contents"></img>
                     </div>
                     <img src="assets/right.png" class="slide_arrow_r" onclick="inc_slide('mte380')"></img>
                 </div>
@@ -386,6 +385,20 @@
                     curr = id;
                 }
             }
+
+            // update initial page if link contains "?id=page_name"
+            window.onload = function() {
+                const urlParams = new URLSearchParams(window.location.search);
+                const id = urlParams.get("id");
+
+                if (id) {
+                    try {
+                        change_content(id);
+                    }
+                    catch (error) {
+                    }
+                }
+            };
 
             curr_slides = {
                 "decruise": 1,
