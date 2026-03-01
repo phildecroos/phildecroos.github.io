@@ -23,12 +23,13 @@ html {
 }
 
 body {
-    background: #ffffff;
+    background: #000000;
     color: #000000;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 18px;
     text-decoration: none;
     text-align: left;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 h1 {
@@ -106,7 +107,7 @@ ul {
     display: inline-block;
     height: 30px;
     width: 30px;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .social_image {
@@ -129,7 +130,7 @@ ul {
 /* Middle Blocks */
 
 .pfp {
-    height: 10vw;
+    height: 12vw;
     border-radius: 50%;
 }
 
@@ -143,14 +144,14 @@ ul {
 }
 
 .left {
-    width: 70%;
-    padding-left: 100px;
+    width: 80%;
+    /* padding-left: 100px; */
     padding-top: 2vw;
 }
 
 .right {
-    width: 30%;
-    padding-right: 50px;
+    width: 20%;
+    /* padding-right: 50px; */
     padding-top: 7vw;
 }
 
@@ -270,7 +271,7 @@ ul {
 }
 
 .projects_list {
-    width: 50%;
+    /* width: 50%; */
     margin-top: 10px;
     border-style: solid;
     border-width: 0;
@@ -281,6 +282,7 @@ ul {
 .projects_list li {
     margin-top: 20px;
     margin-bottom: 20px;
+    white-space: nowrap;
     cursor: pointer;
     transition: padding 0.3s ease;
     user-select: none;
@@ -301,7 +303,7 @@ ul {
 .mode_switch {
     height: 40px;
     width: 40px;
-    margin-right: 10px;
+    margin-right: 0px;
     float: right;
     cursor: pointer;
 }
